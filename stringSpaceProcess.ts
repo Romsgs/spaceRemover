@@ -1,6 +1,6 @@
-export function processName(nameRaw) {
-  nameRaw = nameRaw.trim().split(' ');
+function processString(stringRaw) {
+  stringRaw = stringRaw.trim().split(' ');
   const arr = [];
-  nameRaw.forEach((e) => {if (e != '') {arr.push(e)}});
+  stringRaw.forEach((e) => {if (e != '') {arr.push(e)}});
   return arr.join(' ');
 }
